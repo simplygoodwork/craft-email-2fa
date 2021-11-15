@@ -1,3 +1,5 @@
+# Forked 15 Nov 2021
+
 # Email Two-Factor Authentication plugin for Craft CMS 3.x
 
 Email based Two-factor authentication plugin for Craft CMS
@@ -10,20 +12,20 @@ This plugin requires Craft CMS 3.0.0-beta.23 or later.
 
 To install the plugin, follow these instructions.
 
-1. Open your terminal and go to your Craft project:
+1.  Open your terminal and go to your Craft project:
 
         cd /path/to/project
 
-2. Then tell Composer to load the plugin:
+2.  Then tell Composer to load the plugin:
 
         composer require kodal/craft-email-2fa
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Email 2FA.
+3.  In the Control Panel, go to Settings → Plugins and click the “Install” button for Email 2FA.
 
 ## Restricting access to pages.
 
-Include `{{ requireTwoFactorLogin() }}` in the template for pages you want to require two-factor authentication. 
-Users will be redirected to the verify page link set in the plugin settings. 
+Include `{{ requireTwoFactorLogin() }}` in the template for pages you want to require two-factor authentication.
+Users will be redirected to the verify page link set in the plugin settings.
 
 `{{ requireTwoFactorLogin() }}` also calls requireLogin so logged out users will be redirected to the login form and logged in users will be redirected to the verify form.
 
